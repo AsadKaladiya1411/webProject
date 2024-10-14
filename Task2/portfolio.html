@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaladiya Asad - Web Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #1d3557;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+        nav .logo img{
+            width: 50px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e63946;
+        }
+
+        header {
+            background: #1d3557;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .content-section {
+            padding: 60px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content-section:nth-child(even) {
+            background: #fff;
+        }
+
+        .content-section h2 {
+            color: #1d3557;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .about-section, .projects-section, .skills-section, .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .about-section img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card {
+            background: #e63946;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            display: inline-block;
+            background: #457b9d;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Hover effect */
+        a:hover {
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a href="#">
+            <img src="logoak.jpeg" alt="logo Image">
+        </a>
+    </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Kaladiya Asad</h1>
+    <p>Web Developer | Student at Atmiya University</p>
+</header>
+
+<section id="about" class="about-section content-section container">
+    <div>
+        <h2>About Me</h2>
+        <p>I am Kaladiya Asad, a passionate web developer skilled in front-end technologies like HTML, CSS, JavaScript, and Python. Currently pursuing a BCA degree from Atmiya University with an expected graduation year of 2026.</p>
+    </div>
+    <img src="asad.jpeg" alt="Asad's Image">
+</section>
+
+<section id="projects" class="projects-section content-section container">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Amazon Clone</h3>
+        <p>An e-commerce interface that replicates Amazon’s front-end design using HTML, CSS, and JavaScript.</p>
+    </div>
+</section>
+
+<section id="skills" class="skills-section content-section container">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact-section content-section container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:asadkaladiya1411@gmail.com">asadkaladiya1411@gmail.com</a></p>
+    <p>Phone: <a href="tel:8780232800">8780232800</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kaladiya Asad.</p>
+</footer>
+
+</body>
+</html>
